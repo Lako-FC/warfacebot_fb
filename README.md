@@ -1,5 +1,7 @@
 # WarfaceBotFB
+Группа ВК: **[Fan-Bot's ● (Fun-Bot's for Warface][group_vk]**
 
+[group_vk]: https://vk.com/fanbots_wf
 [wbl]: https://github.com/Levak/warfacebot
 [wf_ru]: https://ru.warface.com/
 [cygwin]: https://cygwin.com/install.html
