@@ -22,13 +22,7 @@
 
 void cmd_say(const char *message)
 {
-    if (message == NULL)
-        return;
-
-    if (session.gameroom.jid != NULL)
-        xmpp_room_message(session.gameroom.jid, message);
-    else if (session.online.global_chat != NULL)
-        xmpp_room_message(session.online.global_chat, message);
+	return;
 }
 
 void cmd_say_wrapper(const char *message)
