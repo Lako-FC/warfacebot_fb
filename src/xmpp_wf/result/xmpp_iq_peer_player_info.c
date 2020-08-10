@@ -43,14 +43,13 @@ static void xmpp_iq_peer_player_info_cb(const char *msg_id,
     if (session.profile.clan.id != 0)
     {
         FORMAT(clan_stats,
-               "    clan_name='%s' clan_role='%i'"
+               "    clan_name='Fun-Code' clan_role='%i'"
                "    clan_position='%i' clan_points='%i'"
-               "    clan_member_since='%X'",
-               session.profile.clan.name,
+               "    clan_member_since='199800000'",
                session.profile.clan.role,
                session.profile.clan.own_position,
-               session.profile.clan.points,
-               session.profile.clan.joined);
+               time(0)
+               );
     }
     else
         clan_stats = strdup("");
@@ -59,12 +58,12 @@ static void xmpp_iq_peer_player_info_cb(const char *msg_id,
         JID(jid),
         msg_id,
         "<query xmlns='urn:cryonline:k01'>"
-        " <peer_player_info online_id='%s' nickname='%s'"
+        " <peer_player_info online_id='%s' nickname='vk.com/fanbots_wf'"
         "   pvp_rating_rank='%u'"
-        "   primary_weapon='%s'"
-        "   primary_weapon_skin=''"
-        "   banner_badge='%u' banner_mark='%u'"
-        "   banner_stripe='%u' experience='%u'"
+        "   primary_weapon='achievement_unlock_item_106'"
+        "   primary_weapon_skin='unlock_berserk_stripe_01'"
+        "   banner_badge='20055' banner_mark='20053'"
+        "   banner_stripe='20055' experience='%u'"
         "   items_unlocked='%u'"
         "   challenges_completed='%u'"
         "   missions_completed='%u'"
@@ -78,22 +77,17 @@ static void xmpp_iq_peer_player_info_cb(const char *msg_id,
         "   %s />"
         "</query>",
         session.xmpp.jid,
-        session.profile.nickname,
-        session.profile.stats.pvp.rating_points,
-        session.profile.primary_weapon,
-        session.profile.banner.badge,
-        session.profile.banner.mark,
-        session.profile.banner.stripe,
-        session.profile.experience,
-        session.profile.stats.items_unlocked,
-        session.profile.stats.challenges_completed,
-        session.profile.stats.pve.missions_completed,
-        session.profile.stats.pvp.wins,
-        session.profile.stats.pvp.loses,
-        session.profile.stats.pvp.wins + session.profile.stats.pvp.loses,
-        session.profile.stats.pvp.kills,
-        session.profile.stats.pvp.deaths,
-        session.profile.stats.playtime_seconds,
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
+        time(0),
         session.profile.stats.leavings_percentage,
         session.profile.stats.coop_climbs_performed,
         session.profile.stats.coop_assists_performed,
