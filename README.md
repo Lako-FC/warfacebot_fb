@@ -16,7 +16,7 @@
 [wf_ru]: https://ru.warface.com/
 [cygwin]: https://cygwin.com/install.html
 [releases]: https://github.com/Lako-FC/warfacebot_fb/releases/
-[releases_fanbots]: https://www.google.com/
+[releases_fanbots]: https://github.com/Lako-FC/warfacebot_fb/releases/
 [fanbots]: https://github.com/Lako-FC/Fan-Bots
 
 ## Лицензия
